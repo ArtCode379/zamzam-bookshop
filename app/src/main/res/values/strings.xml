@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">ZamZam Bookshop</string>
+
+    <!-- shared -->
+    <string name="price">£%1$.2f</string>
+
+    <!-- top bar titles -->
+    <string name="top_bar_home_title">ZamZam Bookshop</string>
+    <string name="top_bar_cart_title">My Cart</string>
+    <string name="top_bar_checkout_title">Checkout</string>
+    <string name="top_bar_orders_title">My Orders</string>
+    <string name="top_bar_settings_title">Settings</string>
+    <string name="top_bar_product_details_title">Book Details</string>
+
+    <!-- bottom bar navigation item titles -->
+    <string name="bottom_bar_nav_item_home_title">Books</string>
+    <string name="bottom_bar_nav_item_cart_title">Cart</string>
+    <string name="bottom_bar_nav_item_orders_title">Orders</string>
+    <string name="bottom_bar_nav_item_settings_title">Settings</string>
+
+    <!-- onboarding screen -->
+    <string name="page_1_title">Discover Great Books</string>
+    <string name="page_2_title">Browse &amp; Reserve</string>
+    <string name="page_3_title">Pick Up In Store</string>
+    <string name="page_1_description">Explore thousands of titles across every genre — from timeless classics and contemporary fiction to academic texts and children\'s literature.</string>
+    <string name="page_2_description">Add your favourite books to the cart, fill in your details, and place a reservation in seconds. We\'ll have everything ready for you.</string>
+    <string name="page_3_description">Once your order is confirmed, simply visit ZamZam Bookshop within 24 hours. Your books will be waiting at the counter — no long waits, no hassle.</string>
+    <string name="next_button_title">Next</string>
+    <string name="start_button_title">Start Reading</string>
+    <string name="skip_button_title">Skip</string>
+
+    <!-- home/products screen -->
+    <string name="products_state_empty_primary_text">No books available at the moment</string>
+    <string name="home_articles_section_title">Literary Insights</string>
+
+    <!-- product details screen -->
+    <string name="product_details_state_empty_primary_text">No information available for this book</string>
+    <string name="product_image_description">Book cover image</string>
+    <string name="button_add_to_cart_label">Add to Cart</string>
+
+    <!-- cart screen -->
+    <string name="cart_state_empty_primary_text">Your cart is empty — start exploring!</string>
+    <string name="button_place_order_label">Reserve • £%1$.2f</string>
+    <string name="increase_quantity_icon_description">Increase quantity</string>
+    <string name="decrease_quantity_icon_description">Decrease quantity</string>
+    <string name="delete_item_icon_description">Remove item</string>
+
+    <!-- orders screen -->
+    <string name="orders_state_empty_primary_text">No reservations yet</string>
+    <string name="order_number">Order #%1$s</string>
+    <string name="order_customer">Customer: %1$s %2$s</string>
+
+    <!-- checkout screen -->
+    <string name="checkout_text_field_first_name">First Name</string>
+    <string name="checkout_text_field_last_name">Last Name</string>
+    <string name="checkout_text_field_email">Email Address</string>
+    <string name="button_confirm_order_label">Confirm Reservation</string>
+
+    <!-- checkout dialog -->
+    <string name="checkout_dialog_title">Reservation Confirmed!</string>
+    <string name="checkout_dialog_order_number">Reservation #%1$s</string>
+    <string name="checkout_dialog_processing_message">Thank you for choosing ZamZam Bookshop! Your books are reserved and waiting for you. Please visit us in store within 24 hours to collect your order. We look forward to seeing you!</string>
+
+    <!-- settings screen -->
+    <string name="settings_screen_company_label">Company</string>
+    <string name="settings_screen_version_label">App Version</string>
+    <string name="settings_screen_customer_support_label">Customer Support</string>
+    <string name="company_name">ZAMZAM BOOKSHOP LTD</string>
+    <string name="app_version">1.0.0</string>
+    <string name="customer_support_link">https://zamzambookshop.uk</string>
+
+    <!-- clear cart dialog -->
+    <string name="clear_cart_dialog_title">Clear cart?</string>
+    <string name="clear_card_dialog_text">Are you sure you want to remove all books from your cart?</string>
+    <string name="button_confirm_clear_cart_title">Confirm</string>
+    <string name="button_cancel_clear_cart_title">Cancel</string>
+
+
+    <!-- book categories -->
+    <string name="category_fiction">Fiction</string>
+    <string name="category_non_fiction">Non-Fiction</string>
+    <string name="category_children">Children\'s</string>
+    <string name="category_academic">Academic</string>
+    <string name="category_islamic_studies">Islamic Studies</string>
+    <string name="category_biography">Biography</string>
+</resources>
