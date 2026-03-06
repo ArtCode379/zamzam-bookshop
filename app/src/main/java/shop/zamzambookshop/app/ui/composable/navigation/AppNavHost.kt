@@ -6,6 +6,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.toRoute
+import shop.zamzambookshop.app.ui.composable.screen.articledetail.ArticleDetailScreen
 import shop.zamzambookshop.app.ui.composable.screen.cart.CartScreen
 import shop.zamzambookshop.app.ui.composable.screen.checkout.CheckoutScreen
 import shop.zamzambookshop.app.ui.composable.screen.onboarding.OnboardingScreen
@@ -65,7 +66,12 @@ fun AppNavHost(
                     navController.navigate(
                         route = NavRoute.ProductDetails(id = id)
                     )
-                }
+                },
+                onNavigateToArticle = { index: Int ->
+                    navController.navigate(
+                        route = NavRoute.ArticleDetail(articleIndex = index)
+                    )
+                },
             )
         }
 
@@ -100,6 +106,13 @@ fun AppNavHost(
 
         composable<NavRoute.Settings> {
             SettingsScreen()
+        }
+
+        composable<NavRoute.ArticleDetail> { backStackEntry ->
+            val articleDetail: NavRoute.ArticleDetail = backStackEntry.toRoute()
+            ArticleDetailScreen(
+                articleIndex = articleDetail.articleIndex,
+            )
         }
     }
 }

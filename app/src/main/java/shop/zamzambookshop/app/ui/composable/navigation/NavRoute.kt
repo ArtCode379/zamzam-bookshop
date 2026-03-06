@@ -26,4 +26,7 @@ sealed class NavRoute {
 
     @Serializable
     data class ProductDetails(val id: Int) : NavRoute()
+
+    @Serializable
+    data class ArticleDetail(val articleIndex: Int) : NavRoute()
 }

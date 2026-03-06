@@ -27,6 +27,7 @@ fun ProductsScreen(
     modifier: Modifier = Modifier,
     viewModel: ProductViewModel = koinViewModel(),
     onNavigateToProductDetails: (productId: Int) -> Unit,
+    onNavigateToArticle: (articleIndex: Int) -> Unit = {},
 ) {
     val productsState by viewModel.productsState.collectAsState()
     val selectedCategoriesState by viewModel.selectedCategoriesState.collectAsState()
@@ -37,6 +38,7 @@ fun ProductsScreen(
         modifier = modifier,
         onCategoryClick = viewModel::selectCategory,
         onNavigateToProductDetails = onNavigateToProductDetails,
+        onNavigateToArticle = onNavigateToArticle,
     )
 }
 
@@ -47,6 +49,7 @@ private fun ProductsContent(
     modifier: Modifier = Modifier,
     onCategoryClick: (ProductCategory) -> Unit,
     onNavigateToProductDetails: (productId: Int) -> Unit,
+    onNavigateToArticle: (articleIndex: Int) -> Unit = {},
 ) {
     DataBasedContainer<List<Product>>(
         dataState = productsState,
@@ -57,6 +60,7 @@ private fun ProductsContent(
                 modifier = modifier,
                 onCategoryClick = onCategoryClick,
                 onNavigateToProductDetails = onNavigateToProductDetails,
+                onNavigateToArticle = onNavigateToArticle,
             )
         },
         dataEmpty = {
@@ -75,6 +79,7 @@ private fun ProductsPopulated(
     modifier: Modifier = Modifier,
     onCategoryClick: (ProductCategory) -> Unit,
     onNavigateToProductDetails: (productId: Int) -> Unit,
+    onNavigateToArticle: (articleIndex: Int) -> Unit = {},
 ) {
     LazyColumn(modifier = modifier) {
         item {
@@ -83,6 +88,7 @@ private fun ProductsPopulated(
                     .fillMaxWidth()
                     .background(MaterialTheme.colorScheme.background)
                     .padding(bottom = 8.dp),
+                onArticleClick = onNavigateToArticle,
             )
         }
 
